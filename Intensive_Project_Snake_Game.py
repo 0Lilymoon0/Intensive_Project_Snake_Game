@@ -97,10 +97,12 @@ while running:
     if direction == "DOWN":
         player_y += velocity
 
-    # If target went off the screen, reset it
-    if target_y > SCREEN_HEIGHT: 
-        target_y = 0
-        target_x = random.random() * (SCREEN_WIDTH - CHARACTER_WIDTH)
+    # Quit the game if the player hits the edge of the screen
+    if player_x < 0 or player_x > 500:
+        pygame.quit()
+
+    if player_y < 0 or player_y > 500:
+        pygame.quit()
 
     # If player collides with target, reset it & increment points
     if is_colliding(player_x, player_y, target_x, target_y, CHARACTER_WIDTH, CHARACTER_HEIGHT):

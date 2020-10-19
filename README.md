@@ -6,11 +6,11 @@ When finished, one should be able to properly play the game of snake. Whereas on
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-When a red block is collected, the score goes up and the player gains an additional green block behind them to add to their character size. 
+When a red block is collected, the score goes up. 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-If the player hits their own "tail" (the additional green squares of their character after collecting red squares), or hits the border, they die.
+If the player hits the border, they die.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
